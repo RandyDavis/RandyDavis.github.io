@@ -1,483 +1,274 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Randy Davis - Web Developer - Family Man - Sports Lover </title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width">
-  <link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-touch-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="favicons/apple-touch-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="favicons/apple-touch-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="favicons/apple-touch-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="favicons/apple-touch-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="favicons/apple-touch-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="favicons/apple-touch-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="favicons/apple-touch-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon-180x180.png">
-  <link rel="icon" type="image/png" href="favicons/favicon-192x192.png" sizes="192x192">
-  <link rel="icon" type="image/png" href="favicons/favicon-160x160.png" sizes="160x160">
-  <link rel="icon" type="image/png" href="favicons/favicon-96x96.png" sizes="96x96">
-  <link rel="icon" type="image/png" href="favicons/favicon-16x16.png" sizes="16x16">
-  <link rel="icon" type="image/png" href="favicons/favicon-32x32.png" sizes="32x32">
-  <meta name="msapplication-TileColor" content="#00a300">
-  <meta name="msapplication-TileImage" content="favicons/mstile-144x144.png">
-  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pt5 - Bootstrap: Landing Page Project</title>
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/smoothness/jquery-ui.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/project.css">
 
-  <link rel="stylesheet" href="css/normalize.min.css">
-  <link rel="stylesheet" href="css/main.css">
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
-  <script src="js/vendor/jquery.hashchange.min.js"></script>
-  <script src="js/vendor/jquery.easytabs.min.js"></script>
-
-  <script src="js/main.js"></script>
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-      <script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
-      <![endif]-->
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
 </head>
-  <body class="bg-fixed bg-1">
-<!--[if lt IE 7]>
-    <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
-    <![endif]-->
-   <div class="main-container">
-    <div class="main wrapper clearfix">
-      <!-- Header Start -->
-        <header id="header">
-            <div id="logo">
-                <h2>
-                    Randy Davis
-                </h2>
-                <h4>
-                    Front-end Developer
-                </h4>
+<body data-spy="scroll" data-target=".navbar-collapse">
+
+  <div class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a href="#" class="navbar-brand">DevRandy</a>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+      </div>
+
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#landing-hero">Home</a></li>
+          <li><a href="#skillset">Skillset</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="row" id="landing-hero">
+    <div class="container contentdiv">
+      <div class="row">
+        <div class="col-md-2 col-xs-1"></div>
+        <div class="col-md-8 col-xs-10 text-center subhead-space">
+          <h1>Randy Davis</h1>
+          <p class="landing-subtext">Web Developer</p>
+          <p>Making cool things is what I love doing.  Have a look around!</p> <br>
+          <h4>Want to keep up with my latest work?  Join my mailing list!</h4>
+
+          <form class="form-inline" id="subscribeEmail">
+            <div class="form-group">
+              <div class="input-group subscribeEmail">
+                <div class="input-group-addon">@</div>
+                <input type="email" class="form-control" placeholder="Email Address">
+              </div>
+              
             </div>
-        </header>
-        <!-- Header End -->
-        <!-- Main Tab Container -->
-        <div id="tab-container" class="tab-container">
-          <!-- Tab List -->
-            <ul class='etabs'>
-                <li class='tab' id="tab-about">
-                  <a href="#about"><i class="fa fa-user"></i><span> About Me</span></a>
-                </li>
-                <li class='tab'>
-                  <a href="#resume"><i class="fa fa-file-text"></i><span> Resume</span></a>
-                </li>
-                <li class='tab'>
-                  <a href="#portfolio"><i class="fa fa-heart"></i><span> Portfolio</span></a>
-                </li>
-                <li class='tab'>
-                  <a href="#contact"><i class="fa fa-envelope"></i><span> Contact</span></a>
-                </li>
-            </ul>
-          <!-- End Tab List -->
-            <div id="tab-data-wrap">
-              <!-- About Tab Data -->
-                <div id="about">
-                    <section class="clearfix">
-                        <div class="g2">
-                            <div class="photo">
-                                <img src="images/randy.png" alt="Randy Davis">
-                            </div>
-                            <div class="info">
-                                <h2>
-                                    Randy Davis
-                                </h2>
-                                <h4>
-                                    Front-end Developer
-                                </h4>
-                                <p>
-                                    A love of web development and design has led me to do what I have always wanted.  I have experience with various language stacks but have devoted more time to JavaScript recently and am excited to work more with the language.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="g1">
-                            <div class="main-links sidebar">
-                                <ul>
-                                    <li>
-                                        <a href="#resume">View My Resume</a>
-                                    </li>
-                                    <li>
-                                        <a href="#portfolio">My Portfolio</a>
-                                    </li>
-                                    <li>
-                                        <a href="#contact">Hire me for your next project</a>
-                                    </li>
-                                    <li>
-                                        <a href="#features">Features</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="break"></div>
-                        <div class="contact-info">
-                          <div class="g1">
-                            <div class="item-box clearfix">
-                              <i class="icon-envelope"></i>
-                              <div class="item-data">
-                                <h3><a href="mailto:randy_davis@outlook.com" target="_blank"><i class="fa fa-envelope"></i>randy_davis@outlook.com</a></h3>
-                                <p>Email Address</p>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="g1">
-                            <div class="item-box clearfix">
-                              <i class="icon-facebook"></i>
-                              <div class="item-data">
-                                <h3><a href="http://github.com/RandyDavis" target="_blank"><i class="fa fa-github-alt"></i>RandyDavis</a></h3>
-                                <p>Github Profile</p>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="g1">
-                            <div class="item-box clearfix">
-                              <i class="icon-twitter"></i>
-                              <div class="item-data">
-                                <h3><a href="http://twitter.com/TheRandyD" target="_blank"><i class="fa fa-twitter"></i>@TheRandyD</a></h3>
-                                <p>Twitter Handle</p>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="g1">
-                            <div class="item-box clearfix">
-                              <i class="icon-linkedin"></i>
-                              <div class="item-data">
-                                <h3><a href="http://www.linkedin.com/in/devrandydavis/" target="_blank"><i class="fa fa-linkedin"></i>devrandydavis</a></h3>
-                                <p>LinkedIn Profile</p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                    </section><!-- content -->
-                </div>
-              <!-- End About Tab Data -->
-              <!-- Resume Tab Data -->
-                <div id="resume">
-                    <section class="clearfix">
-                        <div class="g2">
-                            <h3>
-                                Work Experience
-                                <h6><a href="RandyDavisDevResume.pdf" target="_blank">Download Resume <i class="fa fa-file-pdf-o"></i></a></h6>
-                            </h3>
-                            <ul class="no-list work">
-                                <li>
-                                    <h5>
-                                        Developer: MakerSquare
-                                    </h5><span class="label label-info">July 2014 - Oct. 2014</span>
-                                    <p>
-                                        Completed an immersive twelve week accelerated software engineering program. Learned the foundations and use of various languages and frameworks such as Ruby, JavaScript, Rails, Sinatra, Sass, Foundation &amp; Bootstrap, and Database relationships. Created fully responsive dynamic web applications.
-                                    </p>
-                                    <ul>
-                                      <li>
-                                        <h6 id="projects">Projects:</h6>
-                                        <strong><em><a href="http://appchallenge.mybluemix.net/" target="_blank">IBM Bluemix App Challenge</a></em></strong><span class="label label-info">Oct. 2014</span>
-                                        <p class="project-info">
-                                          Goal: Called in to complete frontend development work for the IBM Bluemix App Challenge landing page in one day.
-                                        </p>
-                                        <p class="project-info">
-                                          Role: Solo project picking up an existing project that lacked functionality and was missing copy
-                                        </p>
-                                        <p class="project-info">
-                                          Stack: HTML5, CSS3, JavaScript, jQuery
-                                        </p><br><hr>
+            <button type="submit" class="btn btn-default">Subscribe</button>
+          </form><br>
 
-                                        <strong><em>Ultimate-Rock-Paper-Scissors</em></strong><span class="label label-info">July 2014 - Oct. 2014</span>
-                                        <p class="project-info">
-                                          Goal: Group created an app that let’s you play rock, paper, scissors against others
-                                        </p>
-                                        <p class="project-info">
-                                          Role: Developed frontend and UI for application
-                                        </p>
-                                        <p class="project-info">
-                                          Stack: Ruby, Foundation, Postgres, Sinatra
-                                        </p><br><hr>
-
-
-                                        <strong><em>Boom!</em></strong><span class="label label-info">July 2014 - Oct. 2014</span>
-                                        <p class="project-info">
-                                          Goal: Create an app to kill indecision for selecting eating and drinking establishments
-                                        </p>
-                                        <p class="project-info">
-                                          Role: Jointly developed front and backend while implementing Yelp API
-                                        </p>
-                                        <p class="project-info">
-                                          Stack: Ruby, Bootstrap, Yelp API, Sinatra
-                                        </p><br><hr>
-
-
-                                        <strong><em>Transformers Quiz</em></strong><span class="label label-info">July 2014 - Oct. 2014</span>
-                                        <p class="project-info">
-                                          Goal: Create an MVC patterned JavaScript quiz with a set theme
-                                        </p>
-                                        <p class="project-info">
-                                          Role: Solo project
-                                        </p>
-                                        <p class="project-info">
-                                          Stack: JavaScript, Foundation, Postgres
-                                        </p><br><hr>
-
-
-                                        <strong><em>Click Clack</em></strong><span class="label label-info">July 2014 - Oct. 2014</span>
-                                        <p class="project-info">
-                                          Goal (Senior Project): Create a Rails app for use in classrooms
-                                        </p>
-                                        <p class="project-info">
-                                          Role: One of two members of UI/UX team; Created view templates, styling, and connected Rails and AngularJS routes
-                                        </p>
-                                        <p class="project-info">
-                                          Stack: Ruby, Rails, Foundation, Postgres, AngularJS, jQuery
-                                        </p><br><hr>
-
-
-                                        <strong><em>PT Pro</em></strong><span class="label label-info">July 2014 - Oct. 2014</span>
-                                        <p class="project-info">
-                                          Goal (Senior Project): Create a client and workout management system for personal trainers
-                                        </p>
-                                        <p class="project-info">
-                                          Role: Solo app created with Ruby on Rails and PostgreSQL
-                                        </p>
-                                        <p class="project-info">
-                                          Stack: Ruby on Rails, Foundation, Postgres
-                                        </p><br><hr>
-
-
-                                        <strong><em>Ultimate-Rock-Paper-Scissors</em></strong><span class="label label-info">July 2014 - Oct. 2014</span>
-                                        <p class="project-info">
-                                          Goal: Group created an app that let’s you play rock, paper, scissors against others
-                                        </p>
-                                        <p class="project-info">
-                                          Role: Developed frontend and UI for application
-                                        </p>
-                                        <p class="project-info">
-                                          Stack: Ruby, Foundation, Postgres, Sinatra
-                                        </p><br>
-                                      </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <h5>
-                                        Teacher/Coach: Westwood High School, Austin, TX
-                                    </h5><span class="label label-warning">Jan. 2004 - July 2014</span>
-                                    <p>
-                                        Taught communications classes for 8 years and then taught HTML/CSS and Photoshop classes for the last year at U.S. Exemplary ranked high school.
-                                    </p>
-                                    <p>
-                                        Hold certifications in Tech Apps, Professional Communication, Health, and Physical Education as well as coached football (9yrs), basketball (3yrs), and track (9 yrs).
-                                    </p>
-                                </li>
-                            </ul>
-                            <h3>
-                                Education
-                            </h3>
-                            <ul class="no-list work">
-                                <li>
-                                    <h5>
-                                        MakerSquare
-                                    </h5><span class="label label-success">Oct. 2014</span>
-                                    <p>
-                                        Completed one of the top web development programs.
-                                    </p>
-                                </li>
-                                <li>
-                                    <h5>
-                                        Baylor University
-                                    </h5><span class="label label-success">1998-2003</span>
-                                    <p>
-                                        B.A. in Communications<span class="label label-success">May 2002</span>
-                                    </p>
-                                    <p>
-                                        M.Ed - Sports Management<span class="label label-success">Dec. 2003</span>
-                                    </p>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="g1">
-                            <div class="sidebar">
-                                <h3>
-                                    Skills
-                                </h3>
-                                <h5>
-                                    Software
-                                </h5>
-                                <div class="meter emerald">
-                                    <span style="width: 55%"><span>Photoshop</span></span>
-                                </div>
-                                <div class="meter carrot">
-                                    <span style="width: 85%"><span>Git</span></span>
-                                </div>
-                                <div class="meter midnight">
-                                    <span style="width: 60%"><span>Dreamweaver</span></span>
-                                </div>
-                                <div class="meter pomengrate">
-                                    <span style="width: 90%"><span>Microsoft Office</span></span>
-                                </div>
-                                
-                                <div class="break"></div>
-                                <h5>
-                                    Design
-                                </h5>
-                                <div class="meter emerald">
-                                    <span style="width: 80%"><span>User Interface</span></span>
-                                </div>
-                                <div class="meter carrot">
-                                    <span style="width: 70%"><span>Typography</span></span>
-                                </div>
-                                <div class="meter wisteria">
-                                    <span style="width: 60%"><span>Web Applications</span></span>
-                                </div>
-                                <div class="break"></div>
-                                <h5>
-                                    Programming Language
-                                </h5>
-                                <div class="meter emerald">
-                                    <span style="width: 85%"><span>HTML/CSS</span></span>
-                                </div>
-                                <div class="meter carrot">
-                                    <span style="width: 60%"><span>Sql/PostgreSQL</span></span>
-                                </div>
-                                <div class="meter wisteria">
-                                    <span style="width: 70%"><span>jQuery/JavaScript</span></span>
-                                </div>
-                                <div class="meter sunflower">
-                                    <span style="width: 60%"><span>Ruby</span></span>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-              <!-- End Resume Tab Data -->
-              <!-- Portfolio Tab Data -->
-                <div id="portfolio">
-                  <h2>Portfolio Coming Soon!</h2>
-                </div>
-                <!-- <div id="portfolio">
-                    <section class="clearfix">
-                        <div class="g1">
-                            <div class="image">
-                                <img src="http://lorempixel.com/306/306/sports/1" alt="">
-                                <div class="image-overlay">
-                                    <div class="image-link">
-                                        <a href="http://lorempixel.com/606/606/sports/1" class="btn">Full View</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="g1">
-                            <div class="image">
-                                <img src="http://lorempixel.com/306/306/sports/2" alt="">
-                                <div class="image-overlay">
-                                    <div class="image-link">
-                                        <a href="http://lorempixel.com/606/606/sports/2" class="btn">Full View</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="g1">
-                            <div class="image">
-                                <img src="http://lorempixel.com/306/306/sports/3" alt="">
-                                <div class="image-overlay">
-                                    <div class="image-link">
-                                        <a href="http://lorempixel.com/606/606/sports/3" class="btn">Full View</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="break"></div>
-                        <div class="g1">
-                            <div class="image">
-                                <img src="http://lorempixel.com/306/306/sports/4" alt="">
-                                <div class="image-overlay">
-                                    <div class="image-link">
-                                        <a href="http://lorempixel.com/606/606/sports/4" class="btn">Full View</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="g1">
-                            <div class="image">
-                                <img src="http://lorempixel.com/306/306/sports/5" alt="">
-                                <div class="image-overlay">
-                                    <div class="image-link">
-                                        <a href="http://lorempixel.com/606/606/sports/5" class="btn">Full View</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="g1">
-                            <div class="image">
-                                <img src="http://lorempixel.com/306/306/business/2" alt="">
-                                <div class="image-overlay">
-                                    <div class="image-link">
-                                        <a href="http://lorempixel.com/606/606/business/2" class="btn">Full View</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                    </section>
-                </div> -->
-              <!-- End Portfolio Data -->
-              <!-- Contact Tab Data -->
-                <div id="contact">
-                    <section class="clearfix">
-                       <div class="g1">
-                         <div class="sny-icon-box">
-                           <div class="sny-icon">
-                              <i class="icon-globe"></i>
-                            </div>
-                            <div class="sny-icon-content">
-                              <h4>My Location</h4>
-                              <p>The beautiful confines of Austin, Tx.</p>
-                            </div>
-                         </div>
-                       </div>
-                       <div class="g1">
-                         <div class="sny-icon-box">
-                           <div class="sny-icon">
-                              <i class="icon-phone"></i>
-                            </div>
-                            <div class="sny-icon-content">
-                              <h4>Mobile Number</h4>
-                              <p>To get in touch, call <a href="tel:512-481-2512">512-481-2512</a>
-                              <p>Note: Leave a message if I am unable to answer.</p>
-                            </div>
-                         </div>
-                       </div>
-                       <div class="g1">
-                         <div class="sny-icon-box">
-                           <div class="sny-icon">
-                              <i class="icon-user"></i>
-                            </div>
-                            <div class="sny-icon-content">
-                              <h4>About Me</h4>
-                              <p>I'm currently looking for new projects to work on, so don't be shy, I am just a <a href="tel:512-481-2512">call</a> or <a href="mailto:randy_davis@outlook.com">email</a> away.</p>
-                            </div>
-                         </div>
-                       </div>
-                       <div class="break"></div>
-                       
-                    </section>
-                </div>
-              <!-- End Contact Data -->
-            </div>
-        </div>
-        <!-- End Tab Container -->
-        <footer>
-          <div>
-            <a href="http://github.com/RandyDavis" target="_blank"><i class="fa fa-github-square fa-2x"></i></a>
-            <a href="http://www.linkedin.com/in/devrandydavis/" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a>
-            <a href="http://twitter.com/TheRandyD" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a>
+          <div class="row">
+            <a href="http://github.com/RandyDavis" target="_blank"><i class="fa fa-github-square fa-3x social-icon"></i></a>
+            <a href="http://www.linkedin.com/in/devrandydavis/" target="_blank"><i class="fa fa-linkedin-square fa-3x social-icon"></i></a>
+            <a href="http://twitter.com/TheRandyD" target="_blank"><i class="fa fa-twitter-square fa-3x social-icon"></i></a>
           </div>
-        </footer>
-    </div><!-- #main -->
-</div><!-- #main-container -->
+        </div>
+        <div class="col-md-2 col-xs-1"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row subsection" id="skillset">
+    <div class="container contentdiv">
+      <div class="row">
+        <div class="col-md-2 col-xs-1"></div>
+        <div class="col-md-8 col-xs-10 text-center">
+          <h1>Specialization</h1>
+          <p class="landing-subtext">Summary of My Best Skills</p>
+        </div>
+        <div class="col-md-2 col-xs-1"></div>
+      </div>
+      <div class="row">
+        <div class="container">
+          <div class="col-md-4 col-xs-10">
+            <div class="row skill-content">
+              <h3><span class="glyphicon glyphicon-check layout-glyph" id="html-glyph"></span>HTML</h3><br>
+              <p class="skill">I specialize in writing clean, semantic, and maintainable HTML compliant code.  HTML5 features are also used in my work on a daily basis.  If you have any markup needs, then I can deliver them.  Have a look at some of my past projects and see for yourself.</p>
+            </div>
+          </div>
+          
+          <div class="col-md-4 col-xs-10">
+            <div class="row skill-content">
+              <h3><span class="glyphicon glyphicon-phone layout-glyph" id="responsive-glyph"></span>Responsive Web Design</h3><br>
+              <p class="skill">I don't work on anything unless the end result is going to be responsive.  It's how I learned and it's just the way to go with so many devices and varying screen sizes in this day and age.  I use Twitter Bootstap and Zurb Foundation interchangebly as frontend frameworks but can also handcode the same results from scratch if needed.</p>
+            </div>
+          </div>
+          
+          <div class="col-md-4 col-xs-10">
+            <div class="row skill-content">
+              <h3><span class="glyphicon glyphicon-heart-empty layout-glyph" id="js-glyph"></span>JavaScript/jQuery</h3><br>
+              <p class="skill">JavaScript and jQuery are fascinating to me!  I just love working with these tools and love how they can be used for solving a vast amount of challenges in todays modern web.  From user interface or experience enhancements, to full on web applications, I use JavaScript for the job. </p>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row subsection" id="projects">
+    <div class="container contentdiv">
+      <div class="row">
+        <div class="col-md-2 col-xs-1"></div>
+        <div class="col-md-8 col-xs-10 text-center">
+          <h1>New Projects are in progress and will be added soon!</h1>
+        </div>
+        <div class="col-md-2 col-xs-1"></div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 col-xs-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3>Project Pipeline</h3>
+            </div>
+            <div class="panel-body">
+              <p>The following are projects currently planned for completion in the coming weeks.  As they are finished, the "View" column will contain a link allowing you to see the finished state of the project.  Feel free to send suggestions and ideas from the Contact page.</p>
+            </div>
+            <div class="table-responsive">
+              <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th>Project #</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Tech Stack</th>
+                    <th>Status</th>
+                    <th>View</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- update tr class tp "success" upon completion of each project -->
+                  <tr class="success">
+                    <td class="text-center">1</td>
+                    <td>Champ &amp; Atlas Birthday RSVP</td>
+                    <td>A basic rsvp app using Bootstrap, Angular, and Firebase so guest can rsvp kids for a birthday party.</td>
+                    <td>Foundation, JavaScript, jQuery, Sass</td>
+                    <td>Version 1 Complete</td>
+                    <td><a href="https://champandatlasrsvp.firebaseapp.com/#/" class="view-project" target="_blank">Turtle Power!!!</a></td>
+                  </tr>
+                  <tr class="warning">
+                    <td class="text-center">1</td>
+                    <td>Corn's Cutz Redesign</td>
+                    <td>Update of current Corn's Cutz site</td>
+                    <td>Foundation, JavaScript, jQuery, Sass</td>
+                    <td>In Progress</td>
+                    <td><a href="#" class="view-project">Coming Soon...</a></td>
+                  </tr>
+                  <tr class="danger">
+                    <td class="text-center">2</td>
+                    <td>ATX Patio Redesign</td>
+                    <td>Update of current ATX Patio site</td>
+                    <td>Bootstrap, JavaScript, jQuery</td>
+                    <td>In Queue</td>
+                    <td><a href="#" class="view-project">Coming Soon...</a></td>
+                  </tr>
+                  <tr class="danger">
+                    <td class="text-center">3</td>
+                    <td>LoneStar Tree Redesign</td>
+                    <td>Update of current LoneStar Tree Service site</td>
+                    <td>Foundation, JavaScript, jQuery</td>
+                    <td>In Queue</td>
+                    <td><a href="#" class="view-project">Coming Soon...</a></td>
+                  </tr>
+                  <tr class="danger">
+                    <td class="text-center">4</td>
+                    <td>Bucky's Box</td>
+                    <td>Site showing different effects on Bucky's Box using jQuery</td>
+                    <td>Foundation, JavaScript, jQuery</td>
+                    <td>In Queue</td>
+                    <td><a href="#" class="view-project">Coming Soon...</a></td>
+                  </tr>
+                  <tr class="danger">
+                    <td class="text-center">5</td>
+                    <td>Shane Mackenzie Blog</td>
+                    <td>Create a brand new blog for author Shane Mackenzie</td>
+                    <td>Foundation, JavaScript, jQuery, AngularJS</td>
+                    <td>In Queue</td>
+                    <td><a href="#" class="view-project">Coming Soon...</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row subsection" id="contact">
+    <div class="container contentdiv">
+      <div class="row">
+        <div class="col-md-2 col-xs-1"></div>
+        <div class="col-md-8 col-xs-10 text-center">
+          <h1>Contact</h1>
+          <p class="landing-subtext">Good stuff to know about getting in touch with me!</p>
+        </div>
+        <div class="col-md-2 col-xs-1"></div>
+      </div>
+      <div class="row">
+        <div class="container">
+          <div class="col-md-4 col-xs-10">
+            <div class="row contact-content">
+              <h3><span class="glyphicon glyphicon-map-marker" id="location-glyph"></span>Location</h3><br>
+              <p class="about">I call the beautiful and insanely tech-active city of Austin, Tx my home.</p><br>
+              <img src="images/austin.png" alt="Austin Map" id="atx-map">
+              
+            </div>
+          </div>
+          
+          <div class="col-md-4 col-xs-10">
+            <div class="row contact-content">
+              <h3><span class="glyphicon glyphicon-envelope layout-glyph" id="contact-glyph"></span>Contact Info</h3><br>
+              
+              <p><strong>Mobile Number:</strong></p>
+              <p>To get in touch, call <a href="tel:512-481-2512">512-481-2512</a>
+              <p>Note: Leave a message if I am unable to answer.</p>
+
+              <p><strong>Email:</strong></p>
+              <p>I can be reached by email at <a href="mailto:randy_davis@outlook.com?subject=DevRandy Mail Inquiry" id="email_me">randy_davis@outlook.com</a>.<br />  <small>*Please allow up to 24hrs for a response, but I'll try my best to respond as soon as possible.</small></p>
+            
+            </div>
+          </div>
+          
+          <div class="col-md-4 col-xs-10">
+            <div class="row contact-content">
+              <h3><span class="glyphicon glyphicon-sunglasses layout-glyph" id="about-glyph"></span>About Me</h3><br>
+              <p class="about">Long story short, I was a teacher and coach for 10 years and always wanted to work in web development.  I have since fully transitioned over to web development and am loving the decision!  I'm a former Baylor football player, but root for the hometown Longhorns (it's where I live), as well as the Aggies (in-laws) whenever they aren't playing the Bears.</p>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row" id="footer">
+    <div class="container text-center">
+      <p>Made with <span class="glyphicon glyphicon-heart"></span> by Randy.  &nbsp; &copy; 2015 DevRandy</p>
+    </div>
+  </div>
 
 
-<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+
+
+
+
+
+  
+  <script src="js/jQuery_v1.11.2.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+  <script>
+    console.log("File Running is: " + $("title").html());
+  </script>
+  <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </body>
 </html>

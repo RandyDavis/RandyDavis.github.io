@@ -1,0 +1,29 @@
+body {
+  padding-top: 70px;
+}
+
+.box {
+  background-color: #d3d3d3;
+  border: 1px solid grey;
+}
+
+.large {
+  font-size: 200%;
+}
+
+#div1 {
+  background-color: blue;
+}
+
+#div2 {
+  background-color: red;
+}
+
+#div3 {
+  background-color: green;
+}
+
+.contentDiv {
+  height: 800px;
+  color: white;
+}

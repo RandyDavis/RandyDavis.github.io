@@ -1,0 +1,135 @@
+/**********************************************
+*                 PAGE STYLES
+**********************************************/
+
+body {
+  padding-top: 50px;
+  position: relative;
+}
+
+.navbar-fixed-top {
+  margin-bottom: 0;
+}
+
+
+/**********************************************
+*                LANDING PAGE STYLES
+**********************************************/
+.subsection {
+  min-height: 900px;
+  /*margin-top: 70px;*/
+  padding-top: 140px;
+  border-bottom: 1px solid #999;
+}
+
+.contentdiv {
+  min-height: 
+}
+
+#landing-hero {
+  background: url("../images/macbook_pro_desk.jpeg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 850px;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.landing-subtext {
+  font-size: 1.3em;
+}
+
+.subscribeEmail {
+  width: 25rem;
+  margin: 0 auto;
+}
+
+.subhead-space {
+  padding-top: 200px;
+}
+
+.skill {
+  /*box-sizing: border-box;*/
+  padding-right: 20px;
+}
+
+.about {
+  padding-right: 20px;
+}
+
+.layout-glyph {
+  margin-right: 5px;
+}
+
+.skill-content {
+  padding-left: 20px;
+}
+
+.contact-content {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+#html-glyph {
+  color: green;
+}
+
+#responsive-glyph {
+  color: purple;
+}
+
+#js-glyph {
+ color: red;
+}
+
+#projects {
+  background-color: #3498db;
+}
+
+#location-glyph {
+  color: red;
+}
+
+#contact-glyph {
+  color: #7f8c8d;
+}
+
+#about-glyph {
+  color: black;
+}
+
+#atx-map {
+  width: 90%;
+  height: 150px;
+}
+
+.social-icon {
+  padding: 10px;
+  color: #e74c3c;
+}
+
+a:hover .social-icon {
+  color: #95a5a6;
+}
+
+/**********************************************
+*                FOOTER STYLES
+**********************************************/
+#footer {
+  min-height: 60px;
+  background-color: #34495e;
+}
+
+#footer p {
+  padding-top: 15px;
+  font-size: 1.1em;
+  color: white;
+}
+
+#footer p span {
+  color: red;
+}
