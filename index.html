@@ -18,29 +18,31 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
 </head>
-<body data-spy="scroll" data-target=".navbar-collapse">
+<body>
+  <div data-spy="scroll" data-target=".navbar-collapse">
 
-  <div class="navbar navbar-default navbar-fixed-top">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <a href="#" class="navbar-brand">DevRandy</a>
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false" aria-controls="navbar">
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a href="#" class="navbar-brand">DevRandy</a>
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-      </div>
+        </div>
 
-      <div class="collapse navbar-collapse">
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="#landing-hero">Home</a></li>
-          <li><a href="#skillset">Skillset</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#landing-hero">Home</a></li>
+            <li><a href="#skillset">Skillset</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
       </div>
-    </div>
+    </nav>
   </div>
 
   <div class="row" id="landing-hero">
@@ -48,14 +50,20 @@
       <div class="row">
         <div class="col-md-2 col-xs-1"></div>
         <div class="col-md-8 col-xs-10 text-center subhead-space">
-          <h1>Randy Davis</h1>
-          <p class="landing-subtext">Web Developer</p>
-          <div class="subtext-group">
-            <p class="landing-subtext" id="1">Dad</p>
-            <p class="landing-subtext" id="2">Sports Fanatic</p>
-            <p class="landing-subtext" id="3">Maker</p>
-            <p class="landing-subtext" id="4">Friend</p>
+          <h1 class="section-heading">Randy Davis</h1>
+          <div class="slider">
+            <div class="slide-viewer">
+              <div class="slide-group">
+                <div class="slide slide-1 landing-subtext" id="1">Web Developer</div>
+                <div class="slide slide-2 landing-subtext" id="2">Dad</div>
+                <div class="slide slide-3 landing-subtext" id="3">Sports Fanatic</div>
+                <div class="slide slide-4 landing-subtext" id="4">Maker</div>
+                <div class="slide slide-5 landing-subtext" id="5">Friend</div>
+              </div>
+            </div>
           </div>
+          <div class="slide-buttons"></div>
+          <br /><br />
           <p>Making cool things is what I love doing.  Have a look around!</p> <br>
 
 
@@ -75,7 +83,7 @@
       <div class="row">
         <div class="col-md-2 col-xs-1"></div>
         <div class="col-md-8 col-xs-10 text-center">
-          <h1>Specialization</h1>
+          <h1 class="section-heading">Specialization</h1>
           <p class="landing-subtext">Summary of My Best Skills</p>
         </div>
         <div class="col-md-2 col-xs-1"></div>
@@ -88,21 +96,21 @@
               <p class="skill">I specialize in writing clean, semantic, and maintainable HTML compliant code.  HTML5 features are also used in my work on a daily basis.  If you have any markup needs, then I can deliver them.  Have a look at some of my past projects and see for yourself.</p>
             </div>
           </div>
-          
+
           <div class="col-md-4 col-xs-10">
             <div class="row skill-content">
               <h3><span class="glyphicon glyphicon-phone layout-glyph" id="responsive-glyph"></span>Responsive Web Design</h3><br>
               <p class="skill">I don't work on anything unless the end result is going to be responsive.  It's how I learned and it's just the way to go with so many devices and varying screen sizes in this day and age.  I use Twitter Bootstap and Zurb Foundation interchangebly as frontend frameworks but can also handcode the same results from scratch if needed.</p>
             </div>
           </div>
-          
+
           <div class="col-md-4 col-xs-10">
             <div class="row skill-content">
               <h3><span class="glyphicon glyphicon-heart-empty layout-glyph" id="js-glyph"></span>JavaScript/jQuery</h3><br>
               <p class="skill">JavaScript and jQuery are fascinating to me!  I just love working with these tools and love how they can be used for solving a vast amount of challenges in todays modern web.  From user interface or experience enhancements, to full on web applications, I use JavaScript for the job. </p>
             </div>
           </div>
-          
+
         </div>
       </div>
     </div>
@@ -113,7 +121,7 @@
       <div class="row">
         <div class="col-md-2 col-xs-1"></div>
         <div class="col-md-8 col-xs-10 text-center">
-          <h1>New Projects are in progress and will be added soon!</h1>
+          <h1 class="section-heading">New Projects are in progress and will be added soon!</h1>
         </div>
         <div class="col-md-2 col-xs-1"></div>
       </div>
@@ -129,65 +137,73 @@
             <div class="table-responsive">
               <table class="table table-hover">
                 <thead>
-                  <tr>
-                    <th>Project #</th>
-                    <th>Name</th>
-                    <th>Description</th>
-                    <th>Tech Stack</th>
-                    <th>Status</th>
-                    <th>View</th>
-                  </tr>
+                <tr>
+                  <th>Project #</th>
+                  <th>Name</th>
+                  <th>Description</th>
+                  <th>Tech Stack</th>
+                  <th>Status</th>
+                  <th>View</th>
+                </tr>
                 </thead>
                 <tbody>
-                  <!-- update tr class tp "success" upon completion of each project -->
-                  <tr class="success">
-                    <td class="text-center">1</td>
-                    <td>Champ &amp; Atlas Birthday RSVP</td>
-                    <td>A basic rsvp app using Bootstrap, Angular, and Firebase so guest can rsvp kids for a birthday party.</td>
-                    <td>Foundation, JavaScript, jQuery, Sass</td>
-                    <td>Version 1 Complete</td>
-                    <td><a href="https://champandatlasrsvp.firebaseapp.com/#/" class="view-project" target="_blank">Turtle Power!!!</a></td>
-                  </tr>
-                  <tr class="warning">
-                    <td class="text-center">1</td>
-                    <td>Corn's Cutz Redesign</td>
-                    <td>Update of current Corn's Cutz site</td>
-                    <td>Foundation, JavaScript, jQuery, Sass</td>
-                    <td>In Progress</td>
-                    <td><a href="#" class="view-project">Coming Soon...</a></td>
-                  </tr>
-                  <tr class="danger">
-                    <td class="text-center">2</td>
-                    <td>ATX Patio Redesign</td>
-                    <td>Update of current ATX Patio site</td>
-                    <td>Bootstrap, JavaScript, jQuery</td>
-                    <td>In Queue</td>
-                    <td><a href="#" class="view-project">Coming Soon...</a></td>
-                  </tr>
-                  <tr class="danger">
-                    <td class="text-center">3</td>
-                    <td>LoneStar Tree Redesign</td>
-                    <td>Update of current LoneStar Tree Service site</td>
-                    <td>Foundation, JavaScript, jQuery</td>
-                    <td>In Queue</td>
-                    <td><a href="#" class="view-project">Coming Soon...</a></td>
-                  </tr>
-                  <tr class="danger">
-                    <td class="text-center">4</td>
-                    <td>Bucky's Box</td>
-                    <td>Site showing different effects on Bucky's Box using jQuery</td>
-                    <td>Foundation, JavaScript, jQuery</td>
-                    <td>In Queue</td>
-                    <td><a href="#" class="view-project">Coming Soon...</a></td>
-                  </tr>
-                  <tr class="danger">
-                    <td class="text-center">5</td>
-                    <td>Shane Mackenzie Blog</td>
-                    <td>Create a brand new blog for author Shane Mackenzie</td>
-                    <td>Foundation, JavaScript, jQuery, AngularJS</td>
-                    <td>In Queue</td>
-                    <td><a href="#" class="view-project">Coming Soon...</a></td>
-                  </tr>
+                <!-- update tr class tp "success" upon completion of each project -->
+                <tr class="success">
+                  <td class="text-center">1</td>
+                  <td>Champ &amp; Atlas Birthday RSVP</td>
+                  <td>A basic rsvp app using Bootstrap, Angular, and Firebase so guest can rsvp kids for a birthday party.</td>
+                  <td>Foundation, JavaScript, jQuery, Sass</td>
+                  <td>Version 1 Complete</td>
+                  <td><a href="https://champandatlasrsvp.firebaseapp.com/#/" class="view-project" target="_blank">Turtle Power!!!</a></td>
+                </tr>
+                <tr class="success">
+                  <td class="text-center">2</td>
+                  <td>Corn's Cutz Redesign</td>
+                  <td>Update of current Corn's Cutz site</td>
+                  <td>Foundation, JavaScript, jQuery, Sass</td>
+                  <td>In Progress</td>
+                  <td><a href="https://corns-cutz-demo.firebaseapp.com/" class="view-project" target="_blank">Corn's Cutz</a></td>
+                </tr>
+                <tr class="warning">
+                  <td class="text-center">3</td>
+                  <td>Chore Board</td>
+                  <td>Chore Posting App</td>
+                  <td>AngularJS, Angular Material, NodeJS, Firebase</td>
+                  <td>In Progress</td>
+                  <td><a href="#" class="view-project" target="_blank">In Progress!!</a></td>
+                </tr>
+                <tr class="danger">
+                  <td class="text-center">4</td>
+                  <td>ATX Patio Redesign</td>
+                  <td>Update of current ATX Patio site</td>
+                  <td>Bootstrap, JavaScript, jQuery</td>
+                  <td>In Queue</td>
+                  <td><a href="#" class="view-project">Coming Soon...</a></td>
+                </tr>
+                <tr class="danger">
+                  <td class="text-center">5</td>
+                  <td>LoneStar Tree Redesign</td>
+                  <td>Update of current LoneStar Tree Service site</td>
+                  <td>Foundation, JavaScript, jQuery</td>
+                  <td>In Queue</td>
+                  <td><a href="#" class="view-project">Coming Soon...</a></td>
+                </tr>
+                <tr class="danger">
+                  <td class="text-center">6</td>
+                  <td>Bucky's Box</td>
+                  <td>Site showing different effects on Bucky's Box using jQuery</td>
+                  <td>Foundation, JavaScript, jQuery</td>
+                  <td>In Queue</td>
+                  <td><a href="#" class="view-project">Coming Soon...</a></td>
+                </tr>
+                <tr class="danger">
+                  <td class="text-center">7</td>
+                  <td>Shane Mackenzie Blog</td>
+                  <td>Create a brand new blog for author Shane Mackenzie</td>
+                  <td>Foundation, JavaScript, jQuery, AngularJS</td>
+                  <td>In Queue</td>
+                  <td><a href="#" class="view-project">Coming Soon...</a></td>
+                </tr>
                 </tbody>
               </table>
             </div>
@@ -202,7 +218,7 @@
       <div class="row">
         <div class="col-md-2 col-xs-1"></div>
         <div class="col-md-8 col-xs-10 text-center">
-          <h1>Contact</h1>
+          <h1 class="section-heading">Contact</h1>
           <p class="landing-subtext">Good stuff to know about getting in touch with me!</p>
         </div>
         <div class="col-md-2 col-xs-1"></div>
@@ -213,32 +229,32 @@
             <div class="row contact-content">
               <h3><span class="glyphicon glyphicon-map-marker" id="location-glyph"></span>Location</h3><br>
               <p class="about">I call the beautiful and insanely tech-active city of Austin, Tx my home.</p><br>
-              <img src="images/austin.png" alt="Austin Map" id="atx-map">
-              
+              <img src="https://github.com/RandyDavis/RandyDavis.github.io/blob/master/images/austin.png?raw=true" alt="Austin Map" id="atx-map">
+
             </div>
           </div>
-          
+
           <div class="col-md-4 col-xs-10">
             <div class="row contact-content">
               <h3><span class="glyphicon glyphicon-envelope layout-glyph" id="contact-glyph"></span>Contact Info</h3><br>
-              
+
               <p><strong>Mobile Number:</strong></p>
               <p>To get in touch, call <a href="tel:512-481-2512">512-481-2512</a>
               <p>Note: Leave a message if I am unable to answer.</p>
 
               <p><strong>Email:</strong></p>
               <p>I can be reached by email at <a href="mailto:randy_davis@outlook.com?subject=DevRandy Mail Inquiry" id="email_me">randy_davis@outlook.com</a>.<br />  <small>*Please allow up to 24hrs for a response, but I'll try my best to respond as soon as possible.</small></p>
-            
+
             </div>
           </div>
-          
+
           <div class="col-md-4 col-xs-10">
             <div class="row contact-content">
               <h3><span class="glyphicon glyphicon-sunglasses layout-glyph" id="about-glyph"></span>About Me</h3><br>
               <p class="about">Long story short, I was a teacher and coach for 10 years and always wanted to work in web development.  I have since fully transitioned over to web development and am loving the decision!  I'm a former Baylor football player, but root for the hometown Longhorns (it's where I live), as well as the Aggies (in-laws) whenever they aren't playing the Bears.</p>
             </div>
           </div>
-          
+
         </div>
       </div>
     </div>
@@ -246,24 +262,15 @@
 
   <div class="row" id="footer">
     <div class="container text-center">
-      <p>Made with <span class="glyphicon glyphicon-heart"></span> by Randy.  &nbsp; &copy; 2015 DevRandy</p>
+      <p>Made with <span class="glyphicon glyphicon-heart"></span> by Randy.  &nbsp; &copy; 2016 DevRandy</p>
     </div>
   </div>
+  <!--</div>-->
 
-
-
-
-
-
-
-  
   <script src="js/jQuery_v1.11.2.min.js"></script>
   <script src="http://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
-
-  <script>
-    console.log("File Running is: " + $("title").html());
-  </script>
-  <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+  <script src="js/app.js"></script>
 </body>
+
 </html>
