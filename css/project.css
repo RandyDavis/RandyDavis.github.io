@@ -11,6 +11,9 @@ body {
   margin-bottom: 0;
 }
 
+.col-xs-10 {
+  width: 100%;
+}
 
 /**********************************************
 *                LANDING PAGE STYLES
@@ -21,10 +24,6 @@ body {
   padding-top: 140px;
   border-bottom: 1px solid #999;
 }
-
-/*.contentdiv {*/
-  /*min-height: */
-/*}*/
 
 #home {
   background: url("../images/macbook_pro_desk.jpeg") no-repeat center center fixed;
@@ -37,6 +36,10 @@ body {
 
 h1 {
   margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 22px;
 }
 
 .landing-subtext {
@@ -102,8 +105,9 @@ h1 {
   color: black;
 }
 
-#atx-map {
-  width: 90%;
+#atx-landscape {
+  display: block;
+  margin: 0 auto;
   height: 150px;
 }
 

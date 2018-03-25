@@ -75,6 +75,12 @@ $(function () {
         });
 
         advance();
-    })
+    });
+
+    // Footer Auto-Date Updating Functionality
+    var dateNow = new Date();
+    var yearNow = dateNow.getFullYear();
+    var $footerDate = $('#footerDate');
+    $footerDate.after(yearNow);
 
 });
