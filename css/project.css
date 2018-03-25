@@ -11,16 +11,11 @@ body {
   margin-bottom: 0;
 }
 
-.col-xs-10 {
-  width: 100%;
-}
-
 /**********************************************
 *                LANDING PAGE STYLES
 **********************************************/
 .subsection {
   min-height: 900px;
-  /*margin-top: 70px;*/
   padding-top: 140px;
   border-bottom: 1px solid #999;
 }
@@ -106,9 +101,8 @@ h3 {
 }
 
 #atx-landscape {
-  display: block;
-  margin: 0 auto;
-  height: 150px;
+  width: 90%;
+  height: auto;
 }
 
 .social-icon {
